@@ -1,0 +1,10 @@
+php:
+    image: php:7.1
+    expose:
+        - "80"
+    ports:
+        - "80:80"
+    working_dir: /usr/share/php/html
+    volumes:
+        - ./:/usr/share/php/html
+    command: php -S 0.0.0.0:80
